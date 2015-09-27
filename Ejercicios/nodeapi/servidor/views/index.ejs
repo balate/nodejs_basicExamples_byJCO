@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <% include cabeceraJavi.ejs%>
+
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>Autor <%= Autor %></p>
+    <p> el segundo actual es <%= par %> </p>
+
+    <% if (par==='par') {%>
+    <% lista.forEach(function(elem){ %>
+    <p><%= elem %></p>
+    <% }) %>
+    <% } %>
+
+  </body>
+</html>
