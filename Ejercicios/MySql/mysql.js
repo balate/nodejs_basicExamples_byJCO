@@ -30,5 +30,5 @@ connection.query('SELECT *FROM agentes', function(err,rows,fields){
         console.log(row)
     });
 
-    //console.log(fields); // show info driver database
+    console.log(fields); // show info driver database
 });
