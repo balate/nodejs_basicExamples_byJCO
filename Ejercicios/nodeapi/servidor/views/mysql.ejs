@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+    Lista de agentes:
+
+    <% rows.forEach(function(row){ %>
+
+    <p><%= row.idagentes %>/p>, <%= row.name %>, <%= row.age %> </p>
+
+        <% }); %>
+
+</body>
+</html>

@@ -22,10 +22,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 console.log(__dirname);
 
+var db = require('./lib/db');
 
 
 app.use('/', require('./routes/index'));
 app.use('/users',require('./routes/users'));
+app.use('/mysql', require('./routes/mysql'));
+
 
 
 app.use('/dependencies',require('./routes/dependencies'));
