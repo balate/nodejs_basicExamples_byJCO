@@ -5,7 +5,7 @@
 var express = require('express');
 var router = express.Router();
 
-var db = require('../lib/db');
+var dbMySQL = require('../lib/dbMySQL');
 
 
 router.get('/', function(req,res){
